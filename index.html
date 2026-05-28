@@ -396,6 +396,28 @@
                     <button type="submit" class="contact-btn">Enviar Mensaje</button>
                 </form>
             </section>
+
+            <section style="background-color: #ffcccc; padding: 2rem; margin-top: 3rem; border: 5px solid red;">
+                <h2 style="color: red; font-size: 32px; font-weight: bold; text-align: center;">MALAS PRACTICAS (Testing)</h2>
+                <div style="background: white; padding: 1rem; margin: 1rem 0; border-radius: 0px;">
+                    <h3 style="color: #ff0000;">Problemas Detectados:</h3>
+                    <p><b>1. Estilos Inline:</b> Todo este contenido usa style= en lugar de clases CSS</p>
+                    <p><b>2. Selectores Ineficientes:</b> div > div > div > p (anidamiento excesivo)</p>
+                    <p><b>3. Variables Sin Usar:</b> var unusedVar = esto no se usa</p>
+                    <p><b>4. Atributos Deprecados:</b> border-radius: 0px deberia ser en .bad-class</p>
+                    <p><b>5. Hardcoding de Colores:</b> #ff0000 en lugar de variables CSS</p>
+                </div>
+                <button onclick="alert(onclick inline)" style="background-color: orange; padding: 10px 20px; border: none; cursor: pointer; color: white; font-size: 16px; margin: 1rem 0;">Click Aqui (Onclick Inline)</button>
+                <div style="margin-top: 2rem;">
+                    <div style="padding: 1rem; border: 1px solid #ddd;">
+                        <div style="background: #f0f0f0; padding: 1rem;">
+                            <div style="color: red; font-weight: bold;">
+                                <p>DIV ANIDADOS SIN NECESIDAD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -404,5 +426,15 @@
         <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
         <p>Hecho con ❤️</p>
     </footer>
+
+    <script>
+        var unusedVariable = "Esta variable nunca se usa";
+        var anotherUnused = 123;
+        function unusedFunction() {
+            console.log("Esta funcion nunca se llama");
+        }
+        // Variables sin const/let
+        globalVariable = "Contaminando el scope global";
+    </script>
 </body>
 </html>
